@@ -27,6 +27,7 @@ fi
 tasks=(`echo ${DEPLOY_TASKS}`)
 cd $build_dir
 for task in ${tasks[@]}; do
+  echo "-----> ruby rake deploy tasks: running $task"
   bundle exec rake $task
 done
 echo "-----> ruby rake deploy tasks installation done"
