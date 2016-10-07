@@ -29,3 +29,4 @@ cd $build_dir
 for task in ${tasks[@]}; do
   rake $task
 done
+echo "-----> ruby rake deploy tasks installation done"
